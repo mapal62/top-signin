@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP Sign-up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
+    <section class="main">
         <div class="leftside">
             <p>
                 <img src="images/odin-lined.png" alt="">
                 <img class="half" src="images/odin-w.svg" alt="">
             </p>
             <div class="leftfoot">
-                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                    Halie West</a> on 
-                    <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Photo by <a
+                    href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Halie West</a> on
+                <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                     Unsplash</a>
             </div>
         </div>
-        <div class="inputs">
-            <p>Just a dummy Sign-up for TOP project</p>
-            <form action="#">
+        <div class="rightside">
+            <div class="signup">
+                <h2>Just a dummy Sign-up for TOP project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi molestiae eveniet omnis tempore
+                    praesentium, et labore natus quibusdam odio culpa sit perspiciatis vitae voluptate dignissimos
+                    soluta.
+                    Odit, beatae dolorum.
+                    Neque, magni quaerat ut ipsam magnam asperiores ipsa aliquam mollitia reprehenderit natus saepe?
+                    Numquam
+                    tempore at fugiat cumque dolorem quis rerum eius ut ex cum! Iure porro molestias quis quasi?</p>
+                <form id="signUpForm" action="#" autocomplete="off">
+                    <div class="data">
+                        <h3>Let's do this</h3>
+                        <div class="row">
+                            <label for="fname">FIRST NAME
+                                <input name="fname" type="text" required>
+                                <div>Enter your name</div>
+                            </label>
+                            <label for="lname">LAST NAME
+                                <input name="lname" type="text">
+                                <div>Enter your family name</div>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label for="email">EMAIL
+                                <input name="email" type="email" required>
+                                <div>Enter your contact e-mail</div>
+                            </label>
+                            <label for="phone">PHONE NUMBER
+                                <input name="phone" type="text">
+                                <div>Enter your contact phone</div>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label for="password">PASSWORD<input name="password" type="password" required>
+                                <div>Enter your password</div>
+                            </label>
+                            <label for="confirm">CONFIRM PASSWORD<input name="confirm" type="password">
+                                <div>Retype your password</div>
+                            </label>
+                        </div>
 
-            </form>
-            <div class="loginlink">
-
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <div class="loginlink">
+                    <p>Already have an account? <a href="#login">Log in</a></p>
+                </div>
+            </div>
+            <div class="sent">
+                <p>You have submited:</p>
+            </div>
+            <div class="login row">
+                <label for="loginemail">EMAIL<input name="loginemail" type="text">
+                    <div>Enter your contact e-mail</div>
+                </label>
+                <label for="loginpassword">PASSWORD<input name="loginpassword" type="password">
+                    <div>Enter your password</div>
+                </label>
+                <button type="submit">TODO something...</button>
             </div>
         </div>
     </section>
     <script src="signup.js"></script>
 </body>
+
 </html>

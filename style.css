@@ -1,21 +1,33 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./images/Norse-Bold.otf);
+}
 body {
     background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;
 }
 section {
     background-color: grey;
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    text-align: center;
 }
 .leftside {
+    font-family: norse-bold;
     position: relative;
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
-    flex-shrink: 2;
-    width: 35%;
-    height: 90vh;
+    flex-basis: 35%;
+    height: 80vh;
     padding-top: 10vh;
+    text-align: center;
+}
+.rightside {
+    flex-basis: 65%;
+    background-color: beige;
+    padding: 10px;
 }
 .leftside>p>img {
     height: 16vh;
@@ -23,9 +35,8 @@ section {
 .leftside>p>img.half {
     height: 8vh;
 }
-p>img {
-    vertical-align:middle;
-
+.leftside>p>img {
+    vertical-align: middle;
 }
 .leftfoot {
     width: 100%;
@@ -35,10 +46,55 @@ p>img {
     text-align: center;
     color: white;
 }
-.inputs {
-    flex-shrink: 1;
-    flex-grow: 1;
+.leftfoot a {
+    text-decoration: none;
+    color: cyan;
+}
+
+.data {
+    margin-top: 25px;
+}
+h3 {
+    margin: 0;
+}
+.row {
+    display: flex;
+    padding: 10px;
+}
+label {
+    width: 40%;
+    font-size: 0.8rem;
+}
+input {
+    display: block;
+    width: 90%;
+    /* outline: none; */
+    border: 1px solid #E5E7EB;
+    background-color: rgb(231, 231, 179);
+}
+input:focus {
+    outline: none;
+    border-color: blue;
+    /* background-color: aqua; */
+    box-shadow: 0 0 2px 2px grey;
+}
+label div {
+    font-size: 0.6rem;
+    color: red;
+}
+button {
+    margin: 10px;
+}
+.loginlink {
+    margin-top: 15px;
+    text-align: right;
 }
 div {
-    border: 1px solid black;
+    /* border: 0.5px solid rgba(128, 128, 128, 0.459) */
+}
+.sent {
+    display: none;
+}
+.login {
+    display: none;
 }
