@@ -35,39 +35,42 @@
                     Numquam
                     tempore at fugiat cumque dolorem quis rerum eius ut ex cum! Iure porro molestias quis quasi?</p>
                 <form id="signUpForm" action="#" autocomplete="off">
-                    <div class="data">
-                        <h3>Let's do this</h3>
-                        <div class="row">
-                            <label for="fname">FIRST NAME
-                                <input name="fname" type="text" required>
-                                <div>Enter your name</div>
-                            </label>
-                            <label for="lname">LAST NAME
-                                <input name="lname" type="text">
-                                <div>Enter your family name</div>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <label for="email">EMAIL
-                                <input name="email" type="email" required>
-                                <div>Enter your contact e-mail</div>
-                            </label>
-                            <label for="phone">PHONE NUMBER
-                                <input name="phone" type="text">
-                                <div>Enter your contact phone</div>
-                            </label>
-                        </div>
-                        <div class="row">
-                            <label for="password">PASSWORD<input name="password" type="password" required>
-                                <div>Enter your password</div>
-                            </label>
-                            <label for="confirm">CONFIRM PASSWORD<input name="confirm" type="password">
-                                <div>Retype your password</div>
-                            </label>
-                        </div>
+                    <fieldset>
+                        <div class="data">
+                            <h3>Let's do this</h3>
+                            <div class="row">
+                                <label for="fname">FIRST NAME
+                                    <input name="fname" type="text" required id="fname">
+                                    <div class="red">*Enter your (nick)name</div>
+                                </label>
+                                <label for="lname">LAST NAME
+                                    <input name="lname" type="text" id="lname">
+                                    <div>Enter your family name</div>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label for="email">EMAIL
+                                    <input name="email" type="email" required id="email">
+                                    <div class="red">*Enter your contact e-mail</div>
+                                </label>
+                                <label for="phone">PHONE NUMBER
+                                    <input name="phone" type="text" id="phone">
+                                    <div>Enter your contact phone</div>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label for="password">PASSWORD<input name="password" type="password" required
+                                        id="password">
+                                    <div class="red">*Enter your password</div>
+                                </label>
+                                <label for="confirm">CONFIRM PASSWORD<input name="confirm" type="password" id="confirm">
+                                    <div class="red">*Retype your password</div>
+                                </label>
+                            </div>
 
-                    </div>
-                    <button type="submit">Create Account</button>
+                        </div>
+                        <button type="submit">Create Account</button>
+                    </fieldset>
                 </form>
                 <div class="loginlink">
                     <p>Already have an account? <a href="#login">Log in</a></p>
@@ -76,14 +79,17 @@
             <div class="sent">
                 <p>You have submited:</p>
             </div>
-            <div class="login row">
-                <label for="loginemail">EMAIL<input name="loginemail" type="text">
-                    <div>Enter your contact e-mail</div>
-                </label>
-                <label for="loginpassword">PASSWORD<input name="loginpassword" type="password">
-                    <div>Enter your password</div>
-                </label>
-                <button type="submit">TODO something...</button>
+            <div id="login" class="login row">
+                <form action="">
+                    <label for="loginemail">EMAIL<input name="loginemail" type="text" required id="loginemail">
+                        <div class="red">*Enter your contact e-mail</div>
+                    </label>
+                    <label for="loginpassword">PASSWORD<input name="loginpassword" type="password" required
+                            id="loginpassword">
+                        <div class="red">*Enter your password</div>
+                    </label>
+                    <button type="submit">TODO something...</button>
+                </form>
             </div>
         </div>
     </section>

@@ -17,7 +17,7 @@ section {
 .leftside {
     font-family: norse-bold;
     position: relative;
-    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("images/halie-west-25xggax4bSA-unsplash-50.jpg");
     background-size: cover;
     flex-basis: 35%;
     height: 80vh;
@@ -50,7 +50,9 @@ section {
     text-decoration: none;
     color: cyan;
 }
-
+fieldset {
+    display: contents;
+}
 .data {
     margin-top: 25px;
 }
@@ -80,14 +82,22 @@ input:focus {
 }
 label div {
     font-size: 0.6rem;
+}
+label div.red {
     color: red;
+  
 }
 button {
     margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
 }
 .loginlink {
     margin-top: 15px;
-    text-align: right;
+    text-align: center;
 }
 div {
     /* border: 0.5px solid rgba(128, 128, 128, 0.459) */
@@ -97,4 +107,11 @@ div {
 }
 .login {
     display: none;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    background-color: beige;
+    padding: 30px;
+    border: 3px solid grey;
+    border-radius: 10px;
 }
